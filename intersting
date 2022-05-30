@@ -1,0 +1,45 @@
+<script type="text/javascript">
+	function add()
+	 {
+		a=10;b=20;   
+		document.write("sum="+(a+b));
+	}                                        //declare function
+	function msg()                          //define
+	 {
+		alert("good morning sir!");
+	}
+	function color() 
+	{
+		document.bgColor="pink";
+	}
+	function change()
+	{
+		document.fgColor="blue";
+	}
+	function image()
+	{
+		document.getElementById('pick').src="download.jpg"
+	}
+	function image()
+	{
+		document.getElementById('pick').src="images.jpg"
+	}
+</script>
+<h1>my first event page</h1>
+<button onclick="add()" style="background-color: red;">click to sum</button><br>
+<button onclick="msg()" style="background-color: skyblue;">click to msg</button><br>
+<button onclick="color()" style="background-color: yellow;">change bgcolor</button><br>
+<button onclick="change()" style="background-color: chartreuse;">change font color</button><br>
+<button onclick="image()">change pick 1</button><br>
+<button onclick="image()">change pick 2</button>
+<head>
+	<style type="text/css">
+	button:hover
+	{
+		color: green;
+		background-color: pink;
+	}	
+
+	</style>
+</head>
+<img src="tree-736885__480.jpg" height="300" id="pick">
